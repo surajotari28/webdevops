@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>radio</title>
+</head>
+<body>
+    <input id="rd1" type="radio" name = 'channel1' value="simple learn">simple learn</input><br>
+    <input id="rd2" type="radio" name = 'channel1' value="telusko learn">telusko learn</input><br>
+    <button onclick="onbt()" id="bt1">Submit</button>
+    <a href="C:\Users\Suraj\Desktop\jscript\newweb_instructor\index.html">return to index page</a>
+</body>
+<script type="text/javascript">
+function onbt(){
+    var a = document.getElementById("rd1");
+    var b = document.getElementById("rd2");
+    console.log(a,b)
+    if(a.checked==true){
+        alert("you are selected : "+a.value);
+    }
+    else{
+        alert("you are selected : "+b.value);
+    }
+}
+</script>
+</html>
